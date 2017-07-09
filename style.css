@@ -1,0 +1,28 @@
+body{
+    background-color: #666;
+}
+
+.twitter-tweet {
+    /*position: absolute;*/
+    /*top: 200;
+    left: 400;*/
+    /*-webkit-transform: rotate(20deg); 
+    transform: rotate(20deg);*/
+}
+
+#trump_concept canvas{
+    /*position: fixed;
+    top: 0;
+    left: 0;*/
+}
+
+.centered-and-cropped { object-fit: cover }
+
+.onCamera{
+    position: absolute;
+    top: 131px;
+}
+
+iframe {
+    visibility: hidden;
+}

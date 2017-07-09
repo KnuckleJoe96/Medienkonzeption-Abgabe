@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="https://www.youtube.com/iframe_api"></script>    
+    <script language="javascript" type="text/javascript" src="scripts/handleTwitter.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+    <script language="javascript" type="text/javascript" src="scripts/handleVideos.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/phaser.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/script.js"></script>
+    <title>Donald Trump</title>
+</head>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+<body tabindex="0" onload="init(); initVideos();">
+    <span id="trump_concept">
+  </span>
+    <div id="tweetContainer">
+    </div>
+    <div id="videoContainer">
+        <iframe id="vid_dating" class="onCamera" width="645" height="486" src="https://www.youtube.com/embed/diMp241gAcw?enablejsapi=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen style="left:195px;"></iframe>
+        <iframe id="vid_loan" class="onCamera" width="864" height="486" src="https://www.youtube.com/embed/TXEOFHf1q9A?enablejsapi=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen style="left:86px;"></iframe>
+        <iframe id="vid_climate" class="onCamera" width="864" height="486" src="https://www.youtube.com/embed/uGEzFbRl-g8?start=59&enablejsapi=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen style="left:86px;"></iframe>
+        <iframe id="vid_wwe" class="onCamera" width="853" height="486" src="https://www.youtube.com/embed/5NsrwH9I9vE?start=28&enablejsapi=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen style="left:91px;"></iframe>
+        <iframe id="vid_grab" class="onCamera" width="864" height="486" src="https://www.youtube.com/embed/J4WO93tN7Kg?enablejsapi=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen style="left:86px;"></iframe>
+        <iframe id="build_a_great_wall" width="854" height="480" src="https://www.youtube.com/embed/8jbfP5vS0SM?enablejsapi=1&autohide=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!--     <div>Syria:
+    </div> -->
+    <blockquote id="syria_1" class="twitter-tweet trumps_world" data-lang="de" style="position: relative;top: 50;left: 500;">
+        <p lang="en" dir="ltr">What I am saying is stay out of Syria.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/375075774644363264">4. September 2013</a></blockquote>
+    <blockquote id="syria_2" class="twitter-tweet trumps_world" data-lang="en">
+        <p lang="en" dir="ltr">Obama must now start focusing on OUR COUNTRY, jobs, healthcare and all of our many problems. Forget Syria and make
+            America great again!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/377783562512392192">September 11, 2013</a></blockquote>
+    <!--    <div>TactfulTweets:
+    </div> -->
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">Amazing how the haters &amp; losers keep tweeting the name “F**kface Von Clownstick” like they are so original &amp;
+            like no one else is doing it...</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/330359969813770242">May 3, 2013</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">Happy Thanksgiving to all--even the haters and losers!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/405778664039534592">November 27, 2013</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">I have never seen a thin person drinking Diet Coke.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/257552283850653696">14. Oktober 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">It&#39;s really cold outside, they are calling it a major freeze, weeks ahead of normal. Man, we could use a big
+            fat dose of global warming!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/656100109386674176">October 19, 2015</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">It&#39;s freezing and snowing in New York--we need global warming!</p>&mdash; Donald J. Trump (@realDonaldTrump)
+        <a href="https://twitter.com/realDonaldTrump/status/266259787405225984">November 7, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">The concept of global warming was created by and for the Chinese in order to make U.S. manufacturing non-competitive.</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realdonaldtrump/status/265895292191248385?lang=de">Nov 6, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">My twitter has become so powerful that I can actually make my enemies tell the truth.</p>&mdash; Donald J. Trump
+        (@realDonaldTrump)
+        <a href="https://twitter.com/realDonaldTrump/status/258584864163500033">October 17, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">If Obama resigns from office NOW, thereby doing a great service to the country—I will give him free lifetime golf
+            at any one of my courses!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/509814075787051008">10. September 2014</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">Obama is, without question, the WORST EVER president. I predict he will now do something really bad and totally stupid
+            to show manhood!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/474719268819308544">6. Juni 2014</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p lang="en" dir="ltr">This election is a total sham and a travesty. We are not a democracy!</p>&mdash; Donald J. Trump (@realDonaldTrump)
+        <a href="https://twitter.com/realDonaldTrump/status/266035509162303492">7. November 2012</a></blockquote>
+    <div>
+
+        <div id="natotweetdiv">
+            <blockquote class="twitter-tweet" data-lang="de">
+                <p lang="en" dir="ltr">Many NATO countries have agreed to step up payments considerably, as they should. Money is beginning to pour
+                    in- NATO will be much stronger.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/868407229380268033">27. Mai 2017</a></blockquote>
+            <div>
+                <!--
+    THE REST:
+    </div>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">Robert Pattinson should not take back Kristen Stewart. She cheated on him like a dog &amp; will do it again--just watch. He can do much better!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/258640349872926720">October 17, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">Robert I'm getting a lot of heat for saying you should dump Kristen- but I'm right. If you saw the Miss Universe girls you would reconsider.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/258966137302315009">October 18, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">So many tweets &amp; stories on Stewart/Pattinson Look, it doesn't matter-- the relationship will never be the same. It is permanently broken.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/259339505998376961">October 19, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">Everyone knows I am right that Robert Pattinson should dump Kristen Stewart. In a couple of years, he will thank me. Be smart, Robert.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/260482827458592768">October 22, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">Everyone is asking me to speak more on Robert &amp; Kristen.I don't have time except to say "Robert, drop her, she cheated on you &amp; will again!"</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/260814133690249217">October 23, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">Everybody wants me to talk about Robert Pattinson and not Brian Williams—I guess people just don’t care about Brian!
+        </p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/267009373132435456">November 9, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">After Friday’s Twilight release, I hope Robert Pattinson will not be seen in public with Kristen--she will cheat on him again!
+        </p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/268416910595600384">November 13, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">.<a href="https://twitter.com/katyperry">@katyperry</a> must have been drunk when she married Russell Brand <a href="https://twitter.com/rustyrockets">@rustyrockets</a> – but he did send me a really nice letter of apology! </p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/522854696663265282">October 16, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">.<a href="https://twitter.com/katyperry">@katyperry</a> Katy, what the hell were you thinking when you married loser Russell Brand. There is a guy who has got nothing going, a waste!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/522897870891261952">October 16, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">.<a href="https://twitter.com/katyperry">@katyperry</a> I watched Russell Brand and I think his mind is fried - he looks really bad. Russell is a total joke, a dummy who is lost!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/522901858126692353">October 17, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">.<a href="https://twitter.com/katyperry">@katyperry</a> is no bargain but I don't like John Mayer--he dates and tells--be careful Katy (just watch!).</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/259355082456449025">October 19, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">.<a href="https://twitter.com/ariannahuff">@ariannahuff</a> is unattractive both inside and out. I fully understand why her former husband left her for a man- he made a good decision.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/240462265680289792">August 28, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">President Obama - close down the flights from Ebola infected areas right now, before it is too late! What the hell is wrong with you?</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/518552645414690816">October 5, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p>The U.S. cannot allow EBOLA infected people back. People that go to far away places to help out are great-but must suffer the consequences!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/statuses/495379061972410369">August 2, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">.<a href="https://twitter.com/AlexSalmond">@AlexSalmond</a>, Wind turbines are ripping your country apart and killing tourism.Electric bills in Scotland are skyrocketing-stop the madness</p>&mdash; Donald J. Trump (@realDonaldTrump)
+        <a href="https://twitter.com/realDonaldTrump/status/446436045178302464">March 20, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" lang="en">
+        <p lang="en" dir="ltr">Pervert alert. <a href="https://twitter.com/repweiner">@RepWeiner</a> is back on twitter. All girls under the age of 18, block him immediately.</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/266276897305026560">November 7, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">Pervert alert. <a href="https://twitter.com/repweiner">@RepWeiner</a> is back on twitter. All girls under the age of 18, block him immediately.</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/266276897305026560">November 7, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">It came out that Huma Abedin knows all about Hillary’s private illegal emails. Huma’s PR husband, Anthony Weiner, will tell the world.</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/628231488794923008">August 3, 2015</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">.<a href="https://twitter.com/ariannahuff">@ariannahuff</a> is unattractive both inside and out. I fully understand why her former husband left her for a man- he made a good decision.</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/240462265680289792">August 28, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">Rosie O'Donnell just said she felt "shame" at being fat-not politically correct! She killed Star Jones for weight loss surgery, just had it!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/464923451984461824">May 10, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">.<a href="https://twitter.com/katyperry">@katyperry</a> Katy, what the hell were you thinking when you married loser Russell Brand. There is a guy who has got nothing going, a waste!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/522897870891261952">October 16, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">Robert Pattinson should not take back Kristen Stewart. She cheated on him like a dog &amp; will do it again--just watch. He can do much better!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/258640349872926720">October 17, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">I have never seen a thin person drinking Diet Coke.</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/257552283850653696">October 14, 2012</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">Happy New Year to all, including to my many enemies and those who have fought me and lost so badly they just don't know what to do. Love!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/815185071317676033">December 31, 2016</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">Watch Kasich squirm --- if he is not truthful in his negative ads I will sue him just for fun!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/667509177707659264">November 20, 2015</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">I wonder why somebody doesn't do something about the clowns <a href="https://twitter.com/politico">@politico</a> and their totally dishonest reporting.</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/651785773478510593">October 7, 2015</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">Obama is, without question, the WORST EVER president. I predict he will now do something really bad and totally stupid to show manhood!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/474719268819308544">June 6, 2014</a></blockquote>
+    <blockquote class="twitter-tweet" data-lang="en">
+        <p dir="ltr" lang="en">not anymore. The beginning of the end was the horrible Iran deal, and now this (U.N.)! Stay strong Israel, January 20th is fast approaching!</p>
+        &mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/814114980983427073">December 28, 2016</a></blockquote>
+        -->
+</body>
+
+</html>
